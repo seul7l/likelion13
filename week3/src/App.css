@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: rgb(185, 229, 247);
+}
+
+h1 {
+  font-size: 52px;
+  color: rgb(74, 131, 168);
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.insertBox {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.insert {
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  flex: 1;
+}
+
+.add {
+  border: 2px solid rgb(74, 131, 168);
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: white;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: rgb(74, 131, 168);
+}
+
+.allList {
+  width: 420px;
+}
+
+.todoText {
+  margin: 5px;
+  flex: 1;
+  word-break: break-all;
+  text-align: left;
+}
+
+.todoBox {
+  border: 2px solid rgb(88, 143, 180);
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  margin: 10px;
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remove {
+  border: 2px solid rgb(221, 39, 39);
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background-color: rgb(221, 39, 39);
+  color: white;
+}
+
+.checkBox {
+  margin: 7px;
+  cursor: pointer;
+}
