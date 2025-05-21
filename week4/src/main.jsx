@@ -7,6 +7,7 @@ import Search from "./pages/Search";
 import RootLayout from "./layouts/RootLayout";
 import MyLayout from "./layouts/MyLayout";
 import AccountEdit from "./pages/AccountEdit";
+import Account from "./pages/Account";
 
 const root = document.getElementById("root");
 
@@ -16,8 +17,10 @@ ReactDOM.createRoot(root).render(
       <Route element={<RootLayout />}>
         <Route index element={<App />} />
         <Route path="search" element={<Search />} />
-        <Route path="account" element={<MyLayout />} />
-        <Route path="account/edit" element={<AccountEdit />} />
+      </Route>
+      <Route path="account" element={<MyLayout />}>
+        <Route index element={<Account />} />
+        <Route path="edit" element={<AccountEdit />} />
       </Route>
     </Routes>
   </BrowserRouter>

@@ -1,21 +1,23 @@
-import React, { useState } from "react";
+import { useState, useEffect} from "react";
 import { useNavigate } from "react-router";
-import styled from "styled-components";
-import UserInfo from "../UserInfo";
+import styled from "styled-components"
+import Account from "./Account";
 
 function AccountEdit() {
-  const [edit, setEdit] = useState({
-    name: UserInfo.name,
-    age: UserInfo.age,
-    email: UserInfo.email,
-  });
+  const [edit, setEdit] = useState();
+
+  useEffect(() => {
+    const data = localStorage.getItem("account");
+
+    setEdit(JSON.parse(data));
+  }, []);
 
   const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
+    localStorage.setItem("account", JSON.stringify(edit));
     navigate("/account");
-    
   }
 
   function handleChange(e) {
@@ -31,7 +33,7 @@ function AccountEdit() {
         <input
           type="text"
           name="name"
-          value={edit.name}
+          value={edit?.name}
           onChange={handleChange}
           placeholder="이름"
         />
@@ -39,7 +41,7 @@ function AccountEdit() {
         <input
           type="number"
           name="age"
-          value={edit.age}
+          value={edit?.age}
           onChange={handleChange}
           placeholder="나이"
         />
@@ -47,13 +49,13 @@ function AccountEdit() {
         <input
           type="email"
           name="email"
-          value={edit.email}
+          value={edit?.email}
           onChange={handleChange}
           placeholder="이메일"
         />
         <br />
       </EditContent>
-      <SaveButton to="/account" type="submit">저장</SaveButton>
+      <SaveButton type="submit">저장</SaveButton>
     </EditPage>
   );
 }
@@ -66,8 +68,10 @@ const EditPage = styled.form`
   flex-direction: column;
 `;
 
-const EditContent = styled.p`
-  display: block;
+const EditContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 `;
 
 const SaveButton = styled.button`
