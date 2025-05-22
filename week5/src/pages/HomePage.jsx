@@ -1,4 +1,4 @@
-import Header from "../components/header/Header";
+import {Header} from "../components/header/Header";
 import FeedbackButtons from "../components/homepage/FeedbackButton";
 import FeedbackCards from "../components/homepage/FeedbackCard";
 import styled from "styled-components";
@@ -8,7 +8,7 @@ import bgImg from "../images/Union.svg"
 export default function HomePage() {
   return (
     <Div>
-      <Header />
+      <Header/>
       <MainContainer>
         <Section>
           <TopText>저번주에 진행되었던 아이디어톤, 모두 어떠셨나요?</TopText>
@@ -22,11 +22,10 @@ export default function HomePage() {
               <HighlightTextBlock>
                 <HighlightText>How was your Ideathon?</HighlightText>
                <HighlightText>Please share your opinion !</HighlightText>
-             </HighlightTextBlock>
-             <p>
-               진짜 언젠가 이런 후기 올릴 수 있는 사이트를 디자인 해보면 좋겠다는
-               생각을 했었는데. 프론트엔드 모두 화이팅!
-             </p>
+               <br/>
+              <Text>진짜 언젠가 이런 후기 올릴 수 있는 사이트를 디자인 해보면 좋겠다는</Text>
+              <Text>생각이 만들다보니 드네요. 프론트엔드 모두 화이팅!</Text>
+            </HighlightTextBlock>
             </Box>
           </TextBlock>
           <Image src={ideathonImg} alt="Ideathon" />
@@ -92,9 +91,9 @@ const TextBlock = styled.div`
 
 const BackgroundImage = styled.img`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 650px;
+  top: 50px;
+  left: 10px;
+  width: 600px;
   object-fit: cover;
   z-index: -1;
   border-radius: 20px;
@@ -114,9 +113,9 @@ const HighlightText = styled.p`
   margin-left: 35px;
   color: #1c1c1c;
   font-family: Pretendard;
-  font-size: 35px;
+  font-size: 45px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
 `;
 
 const Image = styled.img`
@@ -125,3 +124,12 @@ const Image = styled.img`
   border-radius: 70px 0px 0px 70px;
 `;
 
+const Text = styled.p`
+  color: #1c1c1c;
+  text-align: start;
+  font-family: Pretendard;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 10px 0 0 35px;
+`;
