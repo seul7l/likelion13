@@ -66,7 +66,7 @@ export const Strong = styled.p`
   font-weight: 700;
 `;
 
-export const CardDescription = styled.p`
+export const CardDescription = styled.div`
   font-size: 14px;
   margin-top: 8px;
   line-height: 1.4;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Header2} from "../components/header/Header"
+import {Header2} from "../components/header/Header";
 import PointImg from "../images/PinkPoint.png";
 import Idt1 from "../images/idt1.png";
 import Idt2 from "../images/idt2.png";
@@ -16,14 +16,14 @@ export default function ProjectPage() {
         <Div>
             <Header2/>
             <MainContainer>
-                <TextCountainer>
+                <TextContainer>
                     <Container>
                         <Point src={PointImg} alt="분홍 포인트"/>
                         <StrongText>Project</StrongText>
                     </Container>
                     <Text>2025 서경대학교 아이디어톤의 프로젝트 파일입니다. 클릭하여 상세한 정보를 확인하세요!</Text>
                     <Text>모아 놓으니 더 예쁘네요. 다들 너무 수고하셨습니다!</Text>
-                </TextCountainer>
+                </TextContainer>
                     <Idts>
                         <IdtImg src={Idt1} alt="1팀"/>
                         <IdtImg src={Idt2} alt="2팀"/>
@@ -45,7 +45,7 @@ const Div = styled.div`
   height: 2530px;
 `;
 
-export const TextCountainer = styled.div`
+export const TextContainer = styled.div`
     margin-left:40px;
 `;
 
@@ -60,11 +60,11 @@ export const Container = styled.div`
   display:flex;
   gap: 20px;
   margin-bottom: 30px;
-`
+`;
 
 export const Point = styled.img`
     width:60px;
-`
+`;
 
 export const StrongText = styled.p`
   color: #1c1c1c;
@@ -78,7 +78,7 @@ export const Text = styled.div`
     font-family: Pretendard;
     font-size: 30px;
     font-weight: 500;
-`
+`;
 const Idts = styled.div`
     display: flex;
     justify-content: flex-start;

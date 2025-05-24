@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import {Header3} from "../components/header/Header"
-import {MainContainer, Container, Point, StrongText, Text, TextCountainer} from "../pages/ProjectPage"
+import {Header3} from "../components/header/Header";
+import {MainContainer, Container, Point, StrongText, Text, TextContainer} from "../pages/ProjectPage";
 import PointImg from "../images/GreenPoint.png";
 import LikelionIdtImg from "../images/LikelionIdt.png";
 import PresentationImg from "../images/Presentation.png";
-import ScoreImg from "../images/Score.png"
+import ScoreImg from "../images/Score.png";
 
 
 
@@ -13,7 +13,7 @@ export default function DiaryPage() {
         <Div>
             <Header3/>
             <MainContainer>
-                <TextCountainer>
+                <TextContainer>
                     <Container>
                         <Point src={PointImg} alt="초록 포인트"/>
                         <StrongText>Diary</StrongText>
@@ -21,7 +21,7 @@ export default function DiaryPage() {
                     <Text>2025 서경대학교 아이디어톤의 소감을 적는 곳 입니다. 여러분이 느꼈던 모든 것을 적어주세요!</Text>
                     <Text>이미지를 올리셔도 됩니다. 배치도 자유롭게 설정할 수 있어요! 방명록이라고 편하게 생각 부탁함~</Text>
                     <Button>방명록 쓰러가기</Button>
-                </TextCountainer>
+                </TextContainer>
                 <div>
                     <YellowBox>
                         다들<br/>
