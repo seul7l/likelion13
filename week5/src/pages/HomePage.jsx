@@ -21,10 +21,10 @@ export default function HomePage() {
             <Box>
               <HighlightTextBlock>
                 <HighlightText>How was your Ideathon?</HighlightText>
-               <HighlightText>Please share your opinion !</HighlightText>
-               <br/>
-              <Text>진짜 언젠가 이런 후기 올릴 수 있는 사이트를 디자인 해보면 좋겠다는</Text>
-              <Text>생각이 만들다보니 드네요. 프론트엔드 모두 화이팅!</Text>
+                <HighlightText>Please share your opinion !</HighlightText>
+                <br/>
+                <Text>진짜 언젠가 이런 후기 올릴 수 있는 사이트를 디자인 해보면 좋겠다는</Text>
+                <Text>생각이 만들다보니 드네요. 프론트엔드 모두 화이팅!</Text>
             </HighlightTextBlock>
             </Box>
           </TextBlock>
@@ -108,7 +108,7 @@ const Box = styled.div`
   margin-left: 100px;
 `;
 
-const HighlightText = styled.p`
+const HighlightText = styled.div`
   border-radius: 10px;
   margin-left: 35px;
   color: #1c1c1c;

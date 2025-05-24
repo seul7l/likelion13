@@ -31,7 +31,7 @@ export default function FeedbackCards() {
           <CardDescription>
             <Strong>진짜 완전 백퍼 진심</Strong>
             <br />
-            힘들긴 했지만 그만큼의 보람이 있었어요. 여러분들도 그렇나요?
+            <Strong>힘들긴 했지만 그만큼의 보람이 있었어요. 여러분들도 그렇나요?</Strong>
           </CardDescription>
         </Card>
         <Card>

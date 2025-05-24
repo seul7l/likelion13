@@ -1,6 +1,6 @@
 import { HeaderWrapper, Logo, Nav, NavItem, Search, Img, R, Input } from "./Header.styles";
-import SearchImg from "../../images/search.png";
-//import OneImg from "../../images/one.svg";
+import SearchImg from "../../images/search.png"
+
 
 export function Header() {
   return (
