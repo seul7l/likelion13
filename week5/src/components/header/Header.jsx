@@ -2,19 +2,6 @@ import { HeaderWrapper, Logo, Nav, NavItem, Search, Img, R, Input } from "./Head
 import SearchImg from "../../images/search.png"
 
 
-export function Header() {
-  return (
-    <HeaderWrapper>
-      <Logo>IDT</Logo>
-      <Nav>
-        <NavItem className="active" to="/">About</NavItem>
-        <NavItem to="/project">Project</NavItem>
-        <NavItem to="/diary">Diary</NavItem>
-        <NavItem>QnA</NavItem>
-      </Nav>
-    </HeaderWrapper>
-  );
-}
 
 export function Header2() {
   return (
@@ -37,13 +24,15 @@ export function Header2() {
   );
 }
 
-export function Header3() {
+
+export function Header() {
   return (
     <HeaderWrapper>
       <Logo>IDT</Logo>
+      <Outlet/>
       <Nav>
-        <NavItem to="/">About</NavItem>
-        <NavItem to="/project">Project</NavItem>
+        <NavItem className="active1" to="/">About</NavItem>
+        <NavItem className="active2" to="/project">Project</NavItem>
         <NavItem className="active3" to="/diary">Diary</NavItem>
         <NavItem>QnA</NavItem>
       </Nav>

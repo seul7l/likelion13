@@ -108,7 +108,7 @@ const Box = styled.div`
   margin-left: 100px;
 `;
 
-const HighlightText = styled.div`
+const HighlightText = styled.p`
   border-radius: 10px;
   margin-left: 35px;
   color: #1c1c1c;
