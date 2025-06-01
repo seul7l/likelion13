@@ -64,6 +64,8 @@ export const Container = styled.div`
 
 export const Point = styled.img`
     width:60px;
+    height:60px;
+    margin: 10px;
 `;
 
 export const StrongText = styled.p`

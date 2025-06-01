@@ -69,8 +69,8 @@ export const Img = styled.img`
 
 export const R = styled.button`
 color: #1C1C1C;
-font-family: Pretendard;
-font-size: 21px;
+font-family: "Pretendard";
+font-size: 18px;
 font-weight: bold;
 font-style: normal;
 line-height: normal;

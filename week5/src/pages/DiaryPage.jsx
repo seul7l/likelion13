@@ -68,7 +68,7 @@ const Div = styled.div`
 
 const Button = styled.button`
     color: white;
-    font-family: Pretendard;
+    font-family: "Pretendard";
     font-size: 40px;
     font-weight: bold;
     background: #00CE52;
@@ -100,7 +100,7 @@ const LimeBox = styled.div`
     width: 800px;
     height: 400px;
     flex-shrink: 0;
-    font-size: 80px;
+    font-size: 75px;
     border-radius: 15px;
     background: #afd211;
     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
@@ -117,13 +117,13 @@ const Img1 = styled.img`
 
 const BlueBox = styled.div`
     width: 560px;
-    height: 372.796px;
+    height: 373px;
     transform: rotate(-6.485deg);
     flex-shrink: 0;
     border-radius: 15px;
     background: #5A5DFF;
     color: white;
-    font-size:100px;
+    font-size: 90px;
     font-weight: 900;
     padding: 120px 60px;
     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
@@ -137,7 +137,7 @@ const PinkBox = styled.div`
     border-radius: 15px;
     background: #FF7984;
     color: white;
-    font-size: 31px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 1.6;
     padding: 50px;
@@ -155,7 +155,7 @@ const PurpleBox = styled.div`
     height: 444px;
     flex-shrink: 0;
     color: white;
-    font-size: 60px;
+    font-size: 57px;
     font-weight: 700;
     padding: 80px;
     line-height: 1.5;

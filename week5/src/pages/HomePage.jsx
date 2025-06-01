@@ -105,7 +105,8 @@ const HighlightTextBlock = styled.div`
 `;
 
 const Box = styled.div`
-  margin-left: 100px;
+  margin-left: 50px;
+  transform: translateX(50px);
 `;
 
 const HighlightText = styled.p`

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("/assets/fonts/PretendardVariable.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,11 +41,4 @@ html, body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;                /* Chrome, Safari */
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('src/assets/fonts/Pretendard-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
 }

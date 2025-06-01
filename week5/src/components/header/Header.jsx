@@ -15,9 +15,7 @@ export function Header() {
         <Search>
           <Img src={SearchImg} alt="돋보기" />
           <Input placeholder="키워드를 입력하세요." />
-          <div>
             <R>→</R>
-          </div>
         </Search>
       )}
 
