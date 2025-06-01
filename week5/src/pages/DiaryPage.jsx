@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Header3} from "../components/header/Header";
+import {Header} from "../components/header/Header";
 import {MainContainer, Container, Point, StrongText, Text, TextContainer} from "../pages/ProjectPage";
 import PointImg from "../images/GreenPoint.png";
 import LikelionIdtImg from "../images/LikelionIdt.png";
@@ -11,7 +11,7 @@ import ScoreImg from "../images/Score.png";
 export default function DiaryPage() {
     return(
         <Div>
-            <Header3/>
+            <Header/>
             <MainContainer>
                 <TextContainer>
                     <Container>
