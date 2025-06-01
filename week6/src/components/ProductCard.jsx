@@ -27,8 +27,8 @@ const Card = styled.div`
 
 const ProductImage = styled.div`
   background-color:#F5F5F5;
-  width: 330px;
-  height: 330px;
+  width: 310px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
