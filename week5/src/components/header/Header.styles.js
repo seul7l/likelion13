@@ -31,7 +31,7 @@ export const NavItem = styled(Link)`
   margin: 20px;
   cursor: pointer;
 
-  &.active {
+  &.active1 {
     color: black;
     font-weight: bold;
     border-bottom: 5px solid black;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Header2} from "../components/header/Header";
+import {Header} from "../components/header/Header";
 import PointImg from "../images/PinkPoint.png";
 import Idt1 from "../images/idt1.png";
 import Idt2 from "../images/idt2.png";
@@ -14,7 +14,7 @@ import Idt8 from "../images/idt8.png";
 export default function ProjectPage() {
     return(
         <Div>
-            <Header2/>
+            <Header/>
             <MainContainer>
                 <TextContainer>
                     <Container>
